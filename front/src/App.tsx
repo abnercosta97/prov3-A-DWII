@@ -1,11 +1,15 @@
+import Form from "./components/Form";
+import Lista from "./components/Lista";
+import { Provider } from "./contexts";
 
+function App() {
 
-
-export default function App() {
   return (
-    <>
-    <p>Olá React! Prova 3 Versão A </p>
-    </>
+    <Provider>
+      <Form />
+      <Lista />
+    </Provider>
   );
 }
 
+export default App;
